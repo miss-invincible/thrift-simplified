@@ -12,10 +12,10 @@ https://developers.google.com/protocol-buffers
 4. I am adding a basic thrift example file, which you can use to generate service files in your favourite language.
 
 5. You can use this docker image to generate your thrift file very quickly, without having to install thrift locally:
-
+```
 docker pull thrift
 docker run -v "$PWD:/data" thrift thrift -o /data --gen go /data/example.thrift
-
+```
 here data directory is the docker volume which it will use to communicate between docker image and your local.
 I am generating file in go. You can enter your language in it's place.
 
